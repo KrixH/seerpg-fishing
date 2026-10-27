@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeRPG - Horgászat Elemző</title>
+    <link rel="icon" type="image/png" href="./logo.png">
+    
+    <meta property="og:title" content="SeeRPG - Horgászat Elemző">
+    <meta property="og:description" content="Elemezd a SeeRPG horgászati logjaidat egyszerűen és gyorsan!">
+    <meta property="og:image" content="https://i.imgur.com/Hd9AzTM.png">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="top-header">
+            <img src="./logo.png" alt="Logo" class="logo">
+            <h1><span class="see">See</span><span class="rpg">RPG</span> Horgászat Elemző</h1>
+        </header>
+
+        <main>
+            <div class="panel top-bar">
+                <div class="status-area">
+                    <i id="status-icon" class='bx bx-x-circle status-icon text-red'></i>
+                    <span id="file-list" class="status-text">Nincs fájl betöltve</span>
+                </div>
+                
+                <label for="log-upload" class="upload-btn">
+                    <i class='bx bx-refresh'></i> Új fájl(ok) választása
+                </label>
+                <input id="log-upload" type="file" accept=".log,.txt" multiple />
+            </div>
+
+            <details class="help-dropdown">
+                <summary class="help-summary">
+                    <i class='bx bx-chevron-down toggle-icon'></i>
+                    <span>Hol találom a <span class="see">See</span><span class="rpg">RPG</span>-s logjaimat?</span>
+                </summary>
+                <div class="help-content">
+                    <p>Az alábbi módon tudod megnyitni a mappát:</p>
+                    <ol>
+                        <li>
+                            Nyomd le a <kbd>Windows</kbd> + <kbd>R</kbd> billentyűket, majd másold be ezt:
+                            <div class="path-box">
+                                <code>%programdata%\SeeRPG\logs</code>
+                                <button type="button" class="copy-btn" onclick="copyLogPath(this)">
+                                    <i class='bx bx-copy'></i> Másolás
+                                </button>
+                            </div>
+                        </li>
+                        <li>
+                            Vagy nyisd meg a SeeRPG Launchert, kattints a fogaskerék <i class='bx bx-cog'></i> ikonra, és ott megtalálod a(z) „Logok megnyitása” gombot.
+                        </li>
+                    </ol>
+                </div>
+            </details>
+
+            <div class="panel stats-panel">
+                <div class="stat-item">
+                    <span class="stat-label">Eladott halak:</span>
+                    <span class="stat-value"><span id="total-fish">0</span> db</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Teljes bevétel:</span>
+                    <span class="stat-value"><span id="total-money" class="text-red">0</span> Ft</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-label">Átlagos ár/hal:</span>
+                    <span class="stat-value text-blue"><span id="avg-price">0</span> Ft</span>
+                </div>
+            </div>
+
+            <!-- 4. Részletes eladási lista -->
+            <div class="panel list-panel">
+                <div class="list-header">
+                    <h3 class="list-title">Eladások</h3>
+                </div>
+                <div class="list-content">
+                    <div id="fish-categories" class="data-list">
+                        <div class="empty-state">Tölts fel egy log fájlt az adatok megjelenítéséhez...</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Ez a weboldal nem hivatalos <span class="see">See</span><span class="rpg">RPG</span> weboldal, és semmilyen formában nem áll kapcsolatban a <span class="see">See</span><span class="rpg">RPG</span> csapatával.</p>
+            <p><a href="gyik.html" class="footer-link">Adatvédelem és GYIK</a></p>
+            <p class="developer">Developed by KrixH99</p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
