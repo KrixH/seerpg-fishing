@@ -3,32 +3,164 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeeRPG - Adatvédelem & GYIK</title>
-    <link rel="icon" type="image/png" href="./logo.png">
+    <title>SeeRPG - Adatvédelem &amp; GYIK</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <meta property="og:title" content="SeeRPG - Adatvédelem &amp; GYIK">
+    <meta property="og:description" content="Adatvédelmi információk és gyakran ismételt kérdések a SeeRPG Fishing Tools használatához.">
+    <meta property="og:image" content="https://i.imgur.com/Hd9AzTM.png">
+    <meta property="og:type" content="website">
+
     <link rel="stylesheet" href="style.css">
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
     <div class="app-container">
         <header class="top-header">
-            <img src="./logo.png" alt="Logo" class="logo">
-            <h1><span class="see">See</span><span class="rpg">RPG</span> Horgászat Elemző</h1>
+            <div class="header-left">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                <h1><span class="see">See</span><span class="rpg">RPG</span> - Fishing Tools</h1>
+            </div>
+            <div class="header-actions">
+                <a href="calculator.html" class="icon-btn" title="Árkalkulátor">
+                    <i class='bx bx-calculator'></i>
+                </a>
+                <a href="index.html" class="icon-btn" title="Vissza a főoldalra">
+                    <i class='bx bx-home-alt'></i>
+                </a>
+            </div>
         </header>
 
         <main>
             <div class="panel">
                 <div class="list-header">
-                    <h3 class="list-title">Adatvédelem és Gyakran Ismételt Kérdések (GYIK)</h3>
+                    <h3 class="list-title">
+                        <i class='bx bx-help-circle' style="color: var(--accent-gold);"></i>
+                        Adatvédelem és GYIK
+                    </h3>
                 </div>
+
                 <div class="faq-content">
-                    <h4><i class='bx bx-shield-quarter'></i> Tárolja az oldal a feltöltött log fájlokat?</h4>
-                    <p><strong>Szigorúan nem!</strong> A weboldal 100%-ban kliensoldalon működik. Ez azt jelenti, hogy a feltöltött fájlokat kizárólag a te saját böngésződ dolgozza fel. Semmilyen adat, log fájl vagy személyes információ nem kerül elküldésre külső szerverre, és nem kerül mentésre semmilyen adatbázisban.</p>
 
-                    <h4><i class='bx bx-trash'></i> Mi történik az adatokkal, ha bezárom az oldalt?</h4>
-                    <p>Amint frissíted vagy bezárod az oldalt, a böngésző memóriájából minden feltöltött adat és statisztika azonnal és véglegesen törlődik.</p>
+                    <!-- ===== ADATVÉDELEM ===== -->
+                    <div class="faq-section-title">
+                        <i class='bx bx-shield-quarter'></i> Adatvédelem
+                    </div>
 
-                    <h4><i class='bx bx-server'></i> Hivatalos SeeRPG oldal ez?</h4>
-                    <p>Nem. Ez egy független, rajongók által készített, non-profit "Quality of Life" eszköz, amelynek egyetlen célja, hogy megkönnyítse a horgászatból származó bevételek gyors és átlátható összesítését.</p>
+                    <details class="faq-item" open>
+                        <summary class="faq-question">
+                            <span>Tárolja az oldal a feltöltött log fájlokat?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p><strong>Szigorúan nem!</strong> A weboldal 100%-ban kliensoldalon működik. Ez azt jelenti, hogy a feltöltött fájlokat kizárólag a te saját böngésződ dolgozza fel. Semmilyen adat, log fájl vagy személyes információ nem kerül elküldésre külső szerverre, és nem kerül mentésre semmilyen adatbázisban.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Mi történik az adatokkal, ha bezárom az oldalt?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Amint frissíted vagy bezárod az oldalt, a böngésző memóriájából minden feltöltött adat és statisztika azonnal és véglegesen törlődik.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Használ az oldal sütiket (cookie-kat)?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Nem. A SeeRPG Fishing Tools nem helyez el semmilyen sütit a böngésződben, és nem követi a tevékenységedet. A statisztikák kizárólag az aktuális munkamenet (session) idejére tárolódnak a memóriában.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Szükséges regisztrálnom vagy bejelentkeznem?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Nem. Az eszköz használatához nem kell fiókot létrehoznod, bejelentkezned, vagy bármilyen személyes adatot megadnod. Az oldal minden funkciója azonnal elérhető.</p>
+                        </div>
+                    </details>
+
+                    <!-- ===== HASZNÁLAT ===== -->
+                    <div class="faq-section-title">
+                        <i class='bx bx-book-open'></i> Használat
+                    </div>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Milyen fájlformátumokat tudok feltölteni?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>A SeeRPG által generált <strong>.txt</strong> kiterjesztésű fájlt tudja feldolgozni az oldal. Egyszerre több fájl is kiválasztható, így akár több nap eladási adatait is egyetlen lépésben elemezheted.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Hol találom a SeeRPG log fájljaimat?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>A logokat a következő mappában találod:</p>
+                            <div class="path-box" style="margin: 10px 0;">
+                                <code>%programdata%\SeeRPG\logs</code>
+                            </div>
+                            <p>Ezt a leggyorsabban a <kbd>Windows</kbd> + <kbd>R</kbd> billentyűkombinációval, majd az útvonal beillesztésével érheted el. Alternatívaként a SeeRPG Launcher fogaskerék ikonja alatt is megtalálod a „Logok megnyitása” gombot.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Hogyan működik az árkalkulátor?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Az árkalkulátor a játékban ismert 0.1 kg-os alapárból indul ki, és a megadott súly alapján becsüli meg a hal eladási értékét. Mivel a szerver a háttérben rejtett float súlyokkal számol, az itt kapott összeg <strong>tájékoztató jellegű becslés</strong> — a tényleges eladási ár ettől kis mértékben eltérhet.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Miért tér el a kalkulátor által mutatott ár a játékban látottól?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>A SeeRPG szerver a halak súlyát belsőleg nagyobb pontossággal (több tizedesjeggyel) tárolja, mint amit a felület megjelenít. Emiatt a látható és a tényleges ár között kisebb eltérés lehet. Ez teljesen normális jelenség, és nem hiba.</p>
+                        </div>
+                    </details>
+
+                    <!-- ===== ÁLTALÁNOS ===== -->
+                    <div class="faq-section-title">
+                        <i class='bx bx-info-circle'></i> Általános
+                    </div>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Hivatalos SeeRPG oldal ez?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Nem. Ez egy független, rajongók által készített, non-profit "Quality of Life" eszköz, amelynek egyetlen célja, hogy megkönnyítse a horgászatból származó bevételek gyors és átlátható összesítését.</p>
+                        </div>
+                    </details>
+
+                    <details class="faq-item">
+                        <summary class="faq-question">
+                            <span>Találtam egy hibát, vagy van egy ötletem. Hova jelezhetem?</span>
+                            <i class='bx bx-chevron-down faq-chevron'></i>
+                        </summary>
+                        <div class="faq-answer">
+                            <p>Örömmel vesszük a visszajelzéseket! A hibákat és fejlesztési ötleteket a SeeRPG fórumon keresztül tudod jelezni <a href="https://forum.see-rpg.com/direct-messages/add?to=KrixH99" target="_blank" class="footer-link">KrixH99</a> felé.</p>
+                        </div>
+                    </details>
+
                 </div>
                 <div class="back-btn-container">
                     <a href="index.html" class="back-btn">
@@ -39,8 +171,9 @@
         </main>
 
         <footer>
-            <p>Ez a weboldal nem hivatalos <span class="see">See</span><span class="rpg">RPG</span> weboldal, és semmilyen formában nem áll kapcsolatban a <span class="see">See</span><span class="rpg">RPG</span> csapatával.</p>
-            <p class="developer">Developed by KrixH99</p>
+            <p>Ez a weboldal nem hivatalos <a href="https://see-rpg.com/" target="_blank" class="footer-link"><span class="see">See</span><span class="rpg">RPG</span></a> weboldal, és semmilyen formában nem áll kapcsolatban a <a href="https://see-rpg.com/" target="_blank" class="footer-link"><span class="see">See</span><span class="rpg">RPG</span></a> csapatával.</p>
+            <p><a href="index.html" class="footer-link">Főoldal</a></p>
+            <p class="developer">Developed by <a href="https://forum.see-rpg.com/members/krixh99.4187/" target="_blank" class="footer-link">KrixH99</a></p>
         </footer>
     </div>
 </body>

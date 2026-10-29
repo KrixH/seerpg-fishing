@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SeeRPG - Árkalkulátor | Fishing Tools</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
+    
+    <meta property="og:title" content="SeeRPG - Árkalkulátor">
+    <meta property="og:description" content="Számold ki gyorsan a horgászott halaid becsült eladási árait a SeeRPG Fishing Tools segítségével.">
+    <meta property="og:image" content="https://i.imgur.com/Hd9AzTM.png">
+    <meta property="og:type" content="website">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <header class="top-header">
+            <div class="header-left">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                <h1><span class="see">See</span><span class="rpg">RPG</span> - Fishing Tools</h1>
+            </div>
+            <div class="header-actions">
+                <a href="index.html" class="icon-btn" title="Vissza a főoldalra">
+                    <i class='bx bx-home-alt'></i>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <div class="panel list-panel">
+                <div class="list-header flex items-center justify-between">
+                    <h3 class="list-title"><i class='bx bx-calculator text-see-blue' style="margin-right: 8px;"></i> Árkalkulátor</h3>
+                </div>
+                <div class="calc-content">
+                    
+                    <!-- Professzionálisan átfogalmazott figyelmeztető sáv -->
+                    <div class="calc-disclaimer">
+                        <i class='bx bx-info-circle disclaimer-icon'></i>
+                        <div class="disclaimer-text">
+                            <strong>Fontos információ:</strong> Az itt megjelenő összegek tájékoztató jellegű becslések. 
+                            <span>A szerveroldali kerekítés és a rejtett float súly miatt a tényleges eladási ár kis mértékben eltérhet a játékon belül tapasztalható értéktől.</span>
+                        </div>
+                    </div>
+
+                    <div class="fish-table">
+                        <div class="fish-header">
+                            <div>Halfajta / Ritkaság</div>
+                            <div>Súly (kg)</div>
+                            <div style="text-align: right;">Becsült ár</div>
+                        </div>
+                        <div id="fish-calculator-container" class="calc-list">
+                        </div>
+                    </div>
+                </div>
+                <div class="back-btn-container">
+                    <a href="index.html" class="back-btn">
+                        <i class='bx bx-arrow-back'></i> Vissza a főoldalra
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Ez a weboldal nem hivatalos <a href="https://see-rpg.com/" target="_blank" class="footer-link"><span class="see">See</span><span class="rpg">RPG</span></a> weboldal, és semmilyen formában nem áll kapcsolatban a <a href="https://see-rpg.com/" target="_blank" class="footer-link"><span class="see">See</span><span class="rpg">RPG</span></a> csapatával.</p>
+            <p><a href="gyik.html" class="footer-link">Adatvédelem és GYIK</a></p>
+            <p class="developer">Developed by <a href="https://forum.see-rpg.com/members/krixh99.4187/" target="_blank" class="footer-link">KrixH99</a></p>
+        </footer>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

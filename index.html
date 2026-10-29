@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="hu">
 <head>
-            <!--Hatalmas köszönet a SeeRPG csapatának és a SeeRPG Tools fejlesztőjének!
-            SeeRPG Hivatalos Oldal:https://see-rpg.com/
-            SeeRPG Tools Oldal: https://seerpgtools.com/
-            -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SeeRPG - Horgászat Elemző</title>
-    <link rel="icon" type="image/png" href="./logo.png">
+    <title>SeeRPG - Fishing Tools</title>
+    <link rel="icon" type="image/png" href="assets/logo.png">
     
-    <meta property="og:title" content="SeeRPG - Horgászat Elemző">
-    <meta property="og:description" content="Elemezd a SeeRPG horgászati logjaidat egyszerűen és gyorsan!">
+    <meta property="og:title" content="SeeRPG - Fishing Tools">
+    <meta property="og:description" content="Elemezd a SeeRPG horgászati logjaidat, és használd a beépített árkalkulátort!">
     <meta property="og:image" content="https://i.imgur.com/Hd9AzTM.png">
     <meta property="og:type" content="website">
 
@@ -21,8 +17,18 @@
 <body>
     <div class="app-container">
         <header class="top-header">
-            <img src="./logo.png" alt="Logo" class="logo">
-            <h1><span class="see">See</span><span class="rpg">RPG</span> Horgászat Elemző</h1>
+            <div class="header-left">
+                <img src="assets/logo.png" alt="Logo" class="logo">
+                <h1><span class="see">See</span><span class="rpg">RPG</span> - Fishing Tools</h1>
+            </div>
+            <div class="header-actions">
+                <a href="calculator.html" class="icon-btn" title="Árkalkulátor">
+                    <i class='bx bx-calculator'></i>
+                </a>
+                <button id="update-btn" class="icon-btn" title="Frissítési Napló">
+                    <i class='bx bx-time-five'></i>
+                </button>
+            </div>
         </header>
 
         <main>
@@ -33,7 +39,7 @@
                 </div>
                 
                 <label for="log-upload" class="upload-btn">
-                    <i class='bx bx-refresh'></i> Új fájl(ok) választása
+                    <i class='bx bx-refresh'></i> Új log fájl(ok) választása
                 </label>
                 <input id="log-upload" type="file" accept=".log,.txt" multiple />
             </div>
@@ -77,10 +83,9 @@
                 </div>
             </div>
 
-            <!-- 4. Részletes eladási lista -->
             <div class="panel list-panel">
                 <div class="list-header">
-                    <h3 class="list-title">Eladások</h3>
+                    <h3 class="list-title">Kiolvasott Eladások</h3>
                 </div>
                 <div class="list-content">
                     <div id="fish-categories" class="data-list">
@@ -88,12 +93,26 @@
                     </div>
                 </div>
             </div>
+
+            <div id="update-modal" class="modal-overlay">
+                <div class="modal-content panel">
+                    <div class="modal-header">
+                        <div class="modal-title-wrapper">
+                            <div class="icon-circle"><i class='bx bx-history'></i></div>
+                            <h3>Frissítési Napló</h3>
+                        </div>
+                        <button id="close-modal" class="close-btn"><i class='bx bx-x'></i></button>
+                    </div>
+                    <div class="modal-body" id="changelog-container">
+                    </div>
+                </div>
+            </div>
         </main>
 
         <footer>
-            <p>Ez a weboldal nem hivatalos <span class="see">See</span><span class="rpg">RPG</span> weboldal, és semmilyen formában nem áll kapcsolatban a <span class="see">See</span><span class="rpg">RPG</span> csapatával.</p>
+            <p>Ez a weboldal nem hivatalos <a href="https://see-rpg.com/" target="_blank" class="footer-link"><span class="see">See</span><span class="rpg">RPG</span></a> weboldal, és semmilyen formában nem áll kapcsolatban a <a href="https://see-rpg.com/" target="_blank" class="footer-link"><span class="see">See</span><span class="rpg">RPG</span></a> csapatával.</p>
             <p><a href="gyik.html" class="footer-link">Adatvédelem és GYIK</a></p>
-            <p class="developer">Developed by KrixH99</p>
+            <p class="developer">Developed by <a href="https://forum.see-rpg.com/members/krixh99.4187/" target="_blank" class="footer-link">KrixH99</a></p>
         </footer>
     </div>
     

@@ -1,0 +1,35 @@
+[
+    {
+        "version": "v1.0.2",
+        "date": "2026. Október 29.",
+        "changes": [
+            "Árkalkulátor áthelyezése dedikált aloldalra.",
+            "Teljesítmény optimalizálás és laggmentesítés a kalkulátorban.",
+            "Ritkaságok színeinek finomhangolása.",
+            "Teljesítmény optimalizálás: a laggolást okozó backdrop-filter eltávolítva a panelekről, ikonokról és a kalkulátor figyelmeztető sávjáról.",
+            "A görgetési teljesítmény javítása érdekében eltávolításra került a background-attachment: fixed tulajdonság.",
+            "A halfajta sorok hover animációja optimalizálva (transition: all helyett célzott tulajdonságok, transform és box-shadow eltávolítva)."  
+        ]
+    },
+    {
+        "version": "v1.0.1",
+        "date": "2026. Október 28.",
+        "changes": [
+            "Frissítési napló kártyás megjelenése letisztult dizájnnal és optimalizált animációval.",
+            "Dinamikus ikonok és státuszjelzők bevezetése.",
+            "Duplikált CSS blokkok eltávolítva a style.css fájlból az átláthatóság és a kisebb fájlméret érdekében."
+        ]
+    },
+    {
+        "version": "v1.0.0",
+        "date": "2026. Október 27.",
+        "changes": [
+            "A \"Nincs fájl betöltve\" részleg áthelyezése legfelülre a kényelmesebb elrendezés érdekében.",
+            "Új dinamikus ikonok: Piros X és Zöld Pipa jelzi a fájl feltöltésének állapotát.",
+            "Létrehozásra került az Adatvédelem és GYIK aloldal a láblécben.",
+            "Dinamikusan lenyíló és összecsukódó eladás lista animációk implementálása.",
+            "Statisztikai számok számláló animációjának hozzáadása.",
+            "Alap UI dizájn elkészítése."
+        ]
+    }
+]
