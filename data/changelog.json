@@ -1,5 +1,27 @@
 [
     {
+        "version": "v1.0.4",
+        "date": "2026. Október 31.",
+        "changes": [
+            "Új statisztika: 'Összes kifogott hal'",
+            "GYIK bővítése: új kérdések a kifogott halakról, a zálogházról és az SP (SeePoint) valutáról.",
+            "A zálogház figyelmeztető sávja átfogalmazva: 'Utolsó szerverellenőrzés' dátummal.",
+            "A zálogházban az SP (SeePoint) magyarázata: prémium valuta, amely a store.see-rpg.com oldalon vásárolható.",
+            "Kisebb szövegjavítások és egységesítések a GYIK-ben."
+        ]
+    },
+    {
+        "version": "v1.0.3",
+        "date": "2026. Október 30.",
+        "changes": [
+            "Új zálogház oldal – a zálogházban eladható tárgyak listája, keresővel és szűrőkkel.",
+            "A zálogház adatai külön JSON fájlba (data/zacidata.json) szervezve, így könnyen szerkeszthető.",
+            "A zálogház összesítő sávja: kijelölt Ft-os és SP-s tárgyak összege.",
+            "Új 'Kijelölések törlése' gomb a zálogházban.",
+            "A zálogház tárgyaihoz tartozó ikonok megjelenítése."
+        ]
+    },
+    {
         "version": "v1.0.2",
         "date": "2026. Október 29.",
         "changes": [
@@ -8,7 +30,12 @@
             "Ritkaságok színeinek finomhangolása.",
             "Teljesítmény optimalizálás: a laggolást okozó backdrop-filter eltávolítva a panelekről, ikonokról és a kalkulátor figyelmeztető sávjáról.",
             "A görgetési teljesítmény javítása érdekében eltávolításra került a background-attachment: fixed tulajdonság.",
-            "A halfajta sorok hover animációja optimalizálva (transition: all helyett célzott tulajdonságok, transform és box-shadow eltávolítva)."  
+            "A halfajta sorok hover animációja optimalizálva (transition: all helyett célzott tulajdonságok, transform és box-shadow eltávolítva).",
+            "Új SeeRPG Fishing Lab név bevezetése (a korábbi 'Fishing Tools' helyett).",
+            "Az oldal címe, fejléce és lábléce egységesen frissítve az új névre.",
+            "Az OG meta tagek frissítve a SeeRPG Fishing Lab névre.",
+            "A főoldal fejléce mostantól tartalmazza a Zálogház és Árkalkulátor gyorslinkeket.",
+            "A láblécben megjelenik a 'SeeRPG Fishing Lab' felirat a fejlesztő neve mellett."
         ]
     },
     {

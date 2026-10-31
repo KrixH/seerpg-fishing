@@ -20,5 +20,6 @@
     { "weight": 0.1, "name": "Tokhal", "price": 189, "rarity": "Legendary" },
     { "weight": 0.1, "name": "Kardhal", "price": 112, "rarity": "Legendary" },
     { "weight": 0.1, "name": "Kékúszójú tonhal", "price": 102, "rarity": "Legendary" },
-    { "weight": 0.1, "name": "Ázsiai ajakoshal", "price": 527, "rarity": "Exotic" }
+    { "weight": 0.1, "name": "Ázsiai ajakoshal", "price": 527, "rarity": "Exotic" },
+    { "weight": 0.1, "name": "Fűrészesrája", "price": 0, "rarity": "Exotic" }
 ]
